@@ -1,0 +1,263 @@
+.header-menu-item__drop-link[data-section="spain"] {
+  position: relative;
+  background-image: linear-gradient(90deg, #6700D8 0%, #022236 100%);
+}
+.header-menu-item__drop-link[data-section="spain"]:after {
+  content: '';
+  position: absolute;
+  left: 79px;
+  top: 3px;
+  width: 24px;
+  height: 24px;
+  background: url(https://img.championat.com/brand/16608323491151814218.png) no-repeat center/contain;
+}
+
+@media (max-width:767px) {
+  .header-menu-item__drop-link[data-section="spain"]:after {
+    left: 112px;
+    top: 5px;
+    width: 33px;
+    height: 34px;
+  }
+  .header-menu-item__drop-link[data-section="spain"]:not(._selected) {
+    color: #FAFBFD;
+  }
+}
+.tag-page.tag-33817 .entity-header._bg-img {
+	background: url(https://img.championat.com/brand/1660130747136564568.png) no-repeat right top, linear-gradient(176.41deg, #FF3C0D 45.45%, #FF4E1E 106.91%); 
+	background-size: contain;
+}
+.tag-page.tag-33817 .entity-header__title, .tag-page.tag-33817 .tournament-top .entity-header__img img {
+	display: none; 
+}
+.tag-page.tag-33817 .tournament-top .entity-header__img {
+ 	 background: #37003c url(https://img.championat.com/brand/16601308381684596188.jpg) no-repeat right top/auto 100%;
+}
+.tag-page.tag-34187 .entity-header._bg-img {
+	background: url(https://img.championat.com/brand/16601309461442801617.png) no-repeat right top, linear-gradient(36.25deg, #000B2A 56.84%, #0A1436 84.93%); 
+	background-size: contain;
+}
+.tag-page.tag-34187 .tournament-top .entity-header__img img {
+	display: none; 
+}
+.tag-page.tag-34187 .tournament-top .entity-header__img {
+ 	 background: #37003c url(https://img.championat.com/brand/1660130902284565431.jpg) no-repeat right top/auto 100%;
+}
+.tag-page.tag-34187 .entity-header__title-name {
+	max-width: 150px; 
+}
+@media (min-width: 970px) {
+  ._football-5017 .entity-header__wrapper {
+      background: url(https://img.championat.com/brand/1660643948961597482.png) no-repeat right top, #000; 
+      background-size: contain;
+  }
+  ._football-5017 .entity-header__title a, ._football-5017 .entity-header__facts li, ._football-5017 .entity-header__facts li a, ._football-5017 .entity-header__title-name {
+      color: #fff;
+  }
+  ._football-5017 ._tournament .entity-header__title .button._all-tournaments {
+      background: none;
+      color: #FEC500;
+      top: 65px;
+      left: 268px;
+      position: absolute;
+      min-width: auto;
+      font: 12px/16px Roboto,Arial,sans-serif;
+  }
+  ._football-5017 .extra-content .entity-header__wrapper {
+    	background: #fbfbfb
+  }
+}
+@media (max-width: 969px) {
+  ._football-5017:before {
+  		content: '';
+    	display: block;
+    	width: 100%;
+    	height: 70px;
+    	background: url(https://img.championat.com/brand/16606438931669109094.png) no-repeat right bottom, #000;
+        background-size: contain;
+  }
+}
+@media (min-width: 970px) {
+  ._football-5047 .entity-header__wrapper {
+      background: url(https://img.championat.com/brand/1680604829685794950.png) no-repeat right top, #000305; 
+      background-size: contain;
+  }
+  ._football-5047 .entity-header__title a, ._football-5047 .entity-header__facts li, ._football-5047 .entity-header__facts li a, ._football-5047 .entity-header__title-name {
+      color: #fff;
+  }
+  ._football-5047 ._tournament .entity-header__title .button._all-tournaments {
+      background: none;
+      color: #9C6AFF;
+      top: 22px;
+      left: 400px;
+      position: absolute;
+      min-width: auto;
+      font: 12px/16px Roboto,Arial,sans-serif;
+  }
+  ._football-5047 .extra-content .entity-header__wrapper {
+      background: #fbfbfb
+  }
+}
+@media (max-width: 969px) {
+  ._football-5047.tournament-top {
+      padding-top: 84px;
+      background-color: #f2f2f2;
+  }
+}
+
+.football.spain .video-block__top {
+  position: relative;
+}
+.football.spain .video-block__content {
+  border-top: none;
+}
+.football.spain .video-block__link {
+  background: url(https://img.championat.com/brand/1680604901673440072.jpg) no-repeat right top/auto 100%, radial-gradient(93.27% 325.01% at 93.27% 10.63%, #7733FF 0%, rgba(119, 51, 255, 0) 100%), #000305;
+  display: block;
+  height: 110px;
+}
+.football.spain .video-block__link:before {
+  content: 'Смотри яркие моменты';
+  position: absolute;
+  top: 27px;
+  left: 30px;
+  font: bold 26px/28px 'Roboto', 'Arial', sans-serif;
+  color: #fff;
+}
+.football.spain .video-block__link:after {
+  color: #AB81FF;
+  content: 'Испанской примеры';
+  position: absolute;
+  top: 55px;
+  left: 30px;
+  font: bold 26px/28px 'Roboto', 'Arial', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .football.spain .video-block__link {
+    height: 150px;
+    background: radial-gradient(93.27% 325.01% at 93.27% 10.63%, #7733FF 0%, rgba(119, 51, 255, 0) 100%), #000305;
+    background-size: contain;
+  }
+  .football.spain .video-block__link:before {
+    top: 82px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font: bold 20px/24px 'Roboto', 'Arial', sans-serif;
+  }
+  .football.spain .video-block__link:after {
+    bottom: 20px;
+    top: auto;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font: bold 20px/24px 'Roboto', 'Arial', sans-serif;
+  }
+  .football.spain .video-block__link span {
+    position: absolute;
+    width: 120px;
+    height: 38px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(https://img.championat.com/brand/1661251222801622519.png) no-repeat center; 
+    background-size: contain;
+  }
+}
+.tag-page.tag-36545 .entity-header._bg-img {
+	background: url(https://img.championat.com/brand/16733522101006895041.jpg) no-repeat right top, #008978; 
+	background-size: contain;
+}
+.tag-page.tag-36545 .tournament-top .entity-header__img img {
+	display: none; 
+}
+.tag-page.tag-36545 .tournament-top .entity-header__img {
+ 	 background: #008978 url(https://img.championat.com/brand/16733473621484254476.png) no-repeat right top/auto 100%;
+}
+@media screen and (max-width: 969px) {
+  .tag-page.tag-36545 .entity-header._bg-img {
+    background-image: url(https://img.championat.com/brand/1673347148475187780.jpg)
+  }
+}
+@media (min-width: 970px) {
+    .tournament-top._chess-769 > .entity-header .entity-header__wrapper {
+        background: #19191A url(https://img.championat.com/brand/16806942172141170561.jpg) no-repeat right top;
+        background-size: contain;
+    }
+    .tournament-top._chess-769 .entity-header__title .fav-item .fav-item__button {
+        background-color: #fff;
+    }
+    .tournament-top._chess-769 .entity-header__title-name,
+    .tournament-top._chess-769 .entity-header__title-name a,
+    .tournament-top._chess-769 .entity-header__facts li,
+    .tournament-top._chess-769 .entity-header__facts li a {
+        color: #fff;
+    }
+    .tournament-top._chess-769 .entity-header__title .button._all-tournaments {
+        background: none;
+        color: #fff;
+        font-size: 12px;
+        margin-left: -7px;
+        min-width: auto;
+    }
+    .tournament-top._chess-769 .entity-header__title .button._all-tournaments:hover {
+        text-decoration: underline;
+    }
+}
+@media (max-width: 969px) {
+    .tournament-top._chess-769 > .entity-header {
+        padding-top: 84px;
+    }
+    .tournament-top._chess-769 > .entity-header::before {
+        content: '';
+        background: #19191A url(https://img.championat.com/brand/16806941891474302425.png) no-repeat right top/auto 100%;
+        height: 84px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .tournament-top._chess-769 > .entity-header::after {
+        content: '';
+        background: url(https://img.championat.com/brand/1680694161630191580.png) no-repeat 0 0/contain;
+        height: 52px;
+        width: 125px;
+        position: absolute;
+        top: 19px;
+        left: 27px;
+    }
+}
+@media (min-width: 970px) {
+    .tournament-top._football-4987 > .entity-header .entity-header__wrapper {
+        background: #00062d url(https://img.championat.com/brand/1680804442292206473.jpg) no-repeat right top;
+        background-size: contain;
+    }
+    .tournament-top._football-4987 .entity-header__title .fav-item .fav-item__button {
+        background-color: #fff;
+    }
+    .tournament-top._football-4987 .entity-header__title-name,
+    .tournament-top._football-4987 .entity-header__title-name a,
+    .tournament-top._football-4987 .entity-header__facts li,
+    .tournament-top._football-4987 .entity-header__facts li a {
+        color:#fff;
+    }
+    .tournament-top._football-4987 .entity-header__title .button._all-tournaments {
+        background: none;
+        font-size: 12px;
+      	margin-left: -7px;
+        min-width: auto;
+    }
+    .tournament-top._football-4987 .entity-header__title .button._all-tournaments:hover {
+        text-decoration: underline;
+    }
+	.match-center .tournament-top._football-4987 .entity-header__title .button._all-tournaments {
+      	display: none;
+  	}
+}
+@media (max-width: 969px) {
+    .tournament-top._football-4987 {
+        background-color: #f2f2f2;
+        padding-top: 84px;
+    }
+}

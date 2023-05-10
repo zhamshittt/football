@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div style="height: 450px; overflow-y: scroll;">
+	<h4 class="pt-3 pb-3">Судьи</h4>
+	<table class="table table-striped table-hover">
+	  <thead>
+	  	<tr>
+	      <th>Фото</th>
+	      <th>Судья</th>
+	      <th>ДР</th>
+	      <th>Матчи</th>
+	      <th>ГС</th>
+	      <th>ЖК</th>
+	      <th>2ЖК</th>
+	      <th>КК</th>
+	      <th>Пен</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	  	{% for judge in judges %}
+		  	<tr>
+		  		<td>
+		  			{% if judge.image %}
+						<img src="{{judge.image.url}}" alt="">
+					{% else %}
+						<img src="{% static 'person.png' %}" alt="">
+					{% endif %}
+		  		</td>
+		  		<td>
+		  			{{judge.name}}
+		  		</td>
+		  		<td>
+		  			{{judge.birthday}}
+		  		</td>
+		  		<td>{{judge.matches}}</td>
+		  		<td>{{judge.chief_judge}}</td>
+		  		<td>{{judge.yellow_card}}</td>
+		  		<td>{{judge.second_yellow_card}}</td>
+		  		<td>{{judge.red_card}}</td>
+		  		<td>{{judge.penalty}}</td>
+		  	</tr>
+		{% endfor %}
+	  </tbody>
+	</table>
+</div>
+
+{% endblock %}
+
+

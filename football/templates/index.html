@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+	{{url_name}}
+	<h4 class="pt-3">Финал</h4>
+	<p>Метка</p>
+	<div class="row">
+		{% for matche in matches_final %}
+		<div class="col-md-4">
+			<div class="p-4 mb-3 bg-body-tertiary rounded">
+	          <h4 class="fst-italic">{{matche.date}}</h4>
+	          <div class="d-flex" style="align-items: center;justify-content: space-between;">
+	          	<div>
+	          		<ul class="list-unstyled">
+	          			<li>
+	          				<img src="{{matche.home_team.image.url}}" alt="">
+	    					{{matche.home_team.title}}
+	          			</li>
+	          			<li>
+	          				<img src="{{matche.away_team.image.url}}" alt="" height="60" width="60">
+	    					{{matche.away_team.title}}
+	          			</li>
+	          		</ul>
+	          	</div>
+	          	<div>
+	          		 <p class="mb-0">{{matche.home_team_score}} : {{matche.away_team_score}}</p>
+	          	</div>
+	          </div>
+	         
+	        </div>
+		</div>
+		{% endfor %}
+	</div>
+	<div>
+		<h4>Сводная по турниру</h4>
+		<table class="table table-striped table-hover">
+		  
+		  <tbody>
+		  	<tr>
+		  		<td>Всего матчей</td>
+		  		<td>{{matches_count}}</td>
+		  	</tr>
+		  	<tr>
+		  		<td>Сыграно матчей</td>
+		  		<td> {{matches_played}}</td>
+		  	</tr>
+		  	<tr>
+		  		<td>Побед хозяев</td>
+		  		<td>{{home_wins}}</td>
+		  	</tr>
+		  	<tr>
+		  		<td>Ничьих</td>
+		  		<td> {{drows}}</td>
+		  	</tr>
+		  	<tr>
+		  		<td>Побед гостей</td>
+		  		<td>{{away_wins}}</td>
+		  	</tr>
+		  </tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}
+
+
+
+

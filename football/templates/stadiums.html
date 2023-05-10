@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div style="height: 450px; overflow-y: scroll;">
+	<h4 class="pt-3 pb-3">Стадионы</h4>
+	<table class="table table-striped table-hover">
+	  <thead>
+	  	<tr>
+	      <th>Фото</th>
+	      <th>Стадион</th>
+	      <th>Город</th>
+	      <th>Вместимость</th>
+	      <th>Среднее</th>
+	      <th>Заполняемость, %</th>
+	      <th>Матчи</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	  	{% for stadium in stadiums %}
+		  	<tr>
+		  		<td>
+		  			{% if stadium.image %}
+						<img src="{{stadium.image.url}}" alt="">
+					{% else %}
+						<img src="{% static 'person.png' %}" alt="">
+					{% endif %}
+		  		</td>
+		  		<td>
+		  			{{stadium.name}}
+		  		</td>
+		  		<td>
+		  			{{stadium.city}}
+		  		</td>
+		  		<td>{{stadium.capacity}}</td>
+		  		<td>{{stadium.average_capacity}}</td>
+		  		<td>{{stadium.memorability}}</td>
+		  		<td>{{stadium.matches}}</td>
+		  	</tr>
+		{% endfor %}
+	  </tbody>
+	</table>
+</div>
+{% endblock %}
+
+

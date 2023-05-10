@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div style="height: 450px; overflow-y: scroll;">
+	<h4 class="pt-3 pb-3">Тренеры</h4>
+	<table class="table table-striped table-hover">
+	  <thead>
+	  	<tr>
+	      <th>Фото</th>
+	      <th>Тренер</th>
+	      <th>ДР</th>
+	      <th></th>
+	      <th>Команда</th>
+	      <th>Матчи</th>
+	      <th>Победы</th>
+	      <th>Ничьи</th>
+	      <th>Пораж.</th>
+	      <th>Очки</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	  	{% for trainer in trainers %}
+		  	<tr>
+		  		<td>
+		  			{% if trainer.image %}
+						<img src="{{trainer.image.url}}" alt="">
+					{% else %}
+						<img src="{% static 'person.png' %}" alt="">
+					{% endif %}
+		  		</td>
+		  		<td>
+		  			{{trainer.name}}
+		  		</td>
+		  		<td>
+		  			{{trainer.birthday}}
+		  		</td>
+		  		<td>{{player.player.role}}</td>
+		  		<td>{{trainer.team}}</td>
+		  		<td>{{trainer.matches}} </td>
+		  		<td>{{trainer.wins}}</td>
+		  		<td>{{trainer.drows}}</td>
+		  		<td>{{trainer.defeats}}</td>
+		  		<td>{{trainer.points}}</td>
+		  	</tr>
+		{% endfor %}
+	  </tbody>
+	</table>
+</div>
+{% endblock %}
+
+
